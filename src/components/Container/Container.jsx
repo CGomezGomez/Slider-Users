@@ -9,21 +9,23 @@ const Container = () => {
         <h1>Name: {USERS[position].name}</h1>
         <p>User: {USERS[position].username}</p>
         <p>Email: {USERS[position].email}</p>
-        <button onClick={()=> next(position,setPosition)}>Previous</button>
-        <button onClick={()=> back(position,setPosition)}>Next</button>
+        <button onClick={()=> back(position,setPosition)}>Previous</button>
+        <button onClick={()=> next(position,setPosition)}>Next</button>
         </>
     )
+};
+
+
+const back = (position, setPosition) => {
+  if (position > 0) {
+    setPosition(position - 1);
+  }
 };
 
 const next = (position, setPosition) => {
     if (position < 6) {
       setPosition(position + 1);
     }
-  };
-  
-const back = (position, setPosition) => {
-    if (position > 0) {
-      setPosition(position - 1);
-    }
-  };
+};
+
 export default Container;
