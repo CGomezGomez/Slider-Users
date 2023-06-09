@@ -26,5 +26,4 @@ const back = (position, setPosition) => {
       setPosition(position - 1);
     }
   };
-
 export default Container;
