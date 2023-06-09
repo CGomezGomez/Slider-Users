@@ -5,7 +5,7 @@ const Container = () => {
     const [position, setPosition] = useState(0)
     return (
         <>
-        <img src={USERS[position].profileImage} alt="Imagen" />
+        <img src={USERS[position].profileImage} alt="Foto" />
         <h1>Name: {USERS[position].name}</h1>
         <p>User: {USERS[position].username}</p>
         <p>Email: {USERS[position].email}</p>
